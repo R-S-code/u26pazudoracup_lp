@@ -42,17 +42,53 @@ html {
   font-size: 10px;
 }
 
+@keyframes loadingTamadora {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
 #loading {
+  align-items: center;
   background-color: white;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 999;
+  img {
+    animation: loadingTamadora 3s infinite ease-out;
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: $break-point-sp) {
+  #loading {
+    img {
+      width: spCalculation(140);
+    }
+  }
+}
+@keyframes loadedTamadora {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 .loaded {
-  display: none;
+  animation: loadedTamadora 0.5s forwards;
 }
 
 /* ヘッダー */
@@ -204,6 +240,7 @@ html {
       margin-bottom: 1.5rem;
     }
     img {
+      transition: 0.3s;
       width: 6.95rem;
     }
   } 
@@ -508,9 +545,8 @@ main {
 
 // u26-pazudora-cup
 .u26-pazudora-cup {
-  
-  margin-top: -12rem;
-  padding-top: 12rem;
+  margin-top: spCalculation(-30);
+  padding-top: spCalculation(60);
   &__bg {
     @include contents-area-bg(100rem);
     &-shadow {
@@ -528,6 +564,11 @@ main {
     &-text {
       line-height: 5rem;
       margin-top: 5rem;
+      span {
+        background-color: #4BDCC2;
+        color: white;
+        font-size: 2.4rem;
+      }
     }
   }
   &__cm {
@@ -584,6 +625,9 @@ main {
         line-height: spCalculation(50);
         margin-top: spCalculation(30);
         text-align: left;
+        span {
+          font-size: spCalculation(24);
+        }
       }
     }
     &__cm {
@@ -623,6 +667,8 @@ main {
     }
   }
   &__contents {
+    // background-image: url("../images/pazudora_emblem.png");
+    // overflow: hidden;
     padding-top: 8rem;
     transform: skewY(8deg);
   }
@@ -648,6 +694,9 @@ main {
     margin-top: 5rem;
     margin-left: 6rem;
     display: inline-block;
+    &__bg {
+      width: 46rem;
+    }
     &__list {
       display: flex;
       font-size: 1.6rem;
@@ -670,17 +719,26 @@ main {
   }
   &__pool-play {
     background-color: #443f21;
-    display: flex;
+  
     height: 42rem;
     margin-top: 4rem;
-    justify-content: center;
+  
+    &__container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 100rem;
+    }
     &__curly {
+      margin-left: auto;
+      overflow: hidden;
       img {
         height: 42rem;
       }
     }
     &__outline {
-      margin: 4.5rem 0 0;
+      margin: 4.5rem auto 0;
+      padding-left: 2rem;
       &-title {
         background: $bg-yellow;
         color: black;
@@ -722,17 +780,24 @@ main {
   }
   &__final {
     background-color: white;
-    display: flex;
     height: 42rem;
-    justify-content: center;
     margin-top: 8.5rem;
+    &__container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 100rem;
+    }
     &__curly {
+      margin-right: auto;
+      overflow: hidden;
       img {
         height: 42rem;
       }
     }
     &__outline {
-      margin: 4.5rem 0 8rem;
+      margin: 4.5rem auto 8rem;
+      padding-right: 2rem;
       &-title {
         background: black;
         color: white;
@@ -800,6 +865,22 @@ main {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .event-outline {
+    &__pool-play {
+      &__curly {
+        transition: 0.2s;
+        margin-right: -4rem;
+      }
+    }
+    &__final {
+      &__curly {
+        transition: 0.2s;
+        margin-left: -4rem;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: $break-point-sp) {
   .event-outline {
@@ -819,7 +900,7 @@ main {
       }
     }
     &__contents {
-      padding-top: spCalculation(45);
+      padding-top: spCalculation(80);
     }
     &__title-map {
       margin-bottom: spCalculation(28);
@@ -967,6 +1048,7 @@ main {
         font-size: 2.4rem;
         height: 80%;
         justify-content: center;
+        padding-left: 1rem;
         line-height: 4rem;
         span {
           font-size: 3.6rem;
@@ -978,6 +1060,7 @@ main {
     }
     &__prize-image {
       margin-left: auto;
+      text-align: right;
       width: 50rem;
       &-pc {
         height: 41rem;
@@ -1003,6 +1086,7 @@ main {
         height: 80%;
         justify-content: center;
         line-height: 4rem;
+        padding-left: 1rem;
         span {
           font-size: 3.6rem;
         }
@@ -1014,6 +1098,7 @@ main {
     }
     &__prize-image {
       margin-left: auto;
+      text-align: right;
       width: 50rem;
       &-pc {
         height: 41rem;
@@ -1040,6 +1125,7 @@ main {
         height: 80%;
         justify-content: center;
         line-height: 4rem;
+        padding-left: 1rem;
         span {
           font-size: 3.6rem;
         }
@@ -1050,6 +1136,7 @@ main {
     }
     &__prize-image {
       margin-left: auto;
+      text-align: right;
       width: 50rem;
       &-pc {
         height: 41rem;
@@ -1121,6 +1208,7 @@ main {
           height: spCalculation(240);
           justify-content: center;
           line-height: spCalculation(40);
+          padding: 0 spCalculation(10);
           span {
             font-size: spCalculation(36)
           }
@@ -1157,6 +1245,7 @@ main {
           height: spCalculation(240);
           justify-content: center;
           line-height: spCalculation(40);
+          padding: 0 spCalculation(10);
           span {
             font-size: spCalculation(36)
           }
@@ -1191,6 +1280,7 @@ main {
           height: spCalculation(240);
           justify-content: center;
           line-height: spCalculation(40);
+          padding: 0 spCalculation(10);
           span {
             font-size: spCalculation(36)
           }
@@ -1301,13 +1391,14 @@ main {
     &__pc-button {
       margin-top: 4rem;
       text-align: center;
-      transition: 0.2s;
       img {
+        box-shadow: 0 1rem 0.5rem -0.5rem rgba(105, 105, 105, 0.548);
         cursor: pointer;
+        transition: 0.2s;
         width: 38.8rem;
-      }
-      &:hover {
-        transform: scale(1.1);
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
     &__sp-button {
@@ -1413,14 +1504,25 @@ main {
   margin-top: 3rem;
   transform: translateY(14rem);
   &__bg {
-    @include contents-area-bg(70rem);
+    padding: 12rem 2rem 0;
+    @include contents-area-bg(45rem);
     &-shadow {
-      @include contents-area-bg-shadow(70rem);
+      @include contents-area-bg-shadow(45rem);
     }
   }
   &__contents {
-    padding-top: 12rem;
+    background-color: #443F21;
+    display: flex;
+    flex-wrap: wrap;
     transform: skewY(8deg);
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 76rem;
+    img {
+      display: block;
+      margin: 1rem 2rem;
+      width: 15rem;
+    }
   }
 }
 
@@ -1430,9 +1532,19 @@ main {
     padding-top: spCalculation(60);
     transform: translateY(spCalculation(70));
     &__bg {
-      @include contents-area-bg(spCalculation(1000));
+      @include contents-area-bg(spCalculation(460));
       &-shadow {
-        @include contents-area-bg-shadow(spCalculation(1040));
+        @include contents-area-bg-shadow(spCalculation(460));
+      }
+    }
+    &__contents {
+      justify-content: space-evenly;
+      margin: 0 auto;
+      width: 90%;
+      img {
+        display: block;
+        margin: spCalculation(10) spCalculation(20);
+        width: spCalculation(120);
       }
     }
   }
@@ -1444,13 +1556,41 @@ main {
   background-position: left top;
   background-size: cover;
   box-sizing: border-box;
-  height: 32rem;
+  height: 55rem;
   padding: 13rem $default-padding 0;
   position: absolute;
   z-index: 1;
   width: 100%;
+  &__organizer {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    img  {
+      background-color: white;
+      padding: 0.5rem 1rem;
+      width: 35rem;
+    }
+  }
+  &__support {
+    margin-top: 3rem;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    img  {
+      background-color: white;
+      padding: 0.5rem 1rem;
+      width: 13rem;
+    }
+  }
   &__menu {
     display: flex;
+    margin: 5rem auto 0;
     ul {
       &:nth-child(2) {
         margin-left: 8rem;
@@ -1492,8 +1632,35 @@ main {
 @media screen and (max-width: $break-point-sp) {
   .footer {
     background-image: url("../images/sp_footer_bg.svg");
-    height: spCalculation(300);
-    padding: spCalculation(50) spCalculation(40) 0;
+    height: spCalculation(450);
+    padding: spCalculation(80) spCalculation(40) 0;
+    &__organizer {
+      align-items: center;
+      display: flex;
+      h1 {
+        font-size: spCalculation(18);
+        margin-bottom: 0;
+        margin-right: spCalculation(10);
+      }
+      img  {
+        padding: spCalculation(5) spCalculation(10);
+        width: spCalculation(240);
+      }
+    }
+    &__support {
+      align-items: center;
+      margin-top: spCalculation(20);
+      display: flex;
+      h1 {
+        font-size: spCalculation(18);
+        margin-bottom: 0;
+        margin-right: spCalculation(10);
+      }
+      img  {
+        padding: spCalculation(5) spCalculation(10);
+        width: spCalculation(80);
+      }
+    }
     &__menu {
       ul {
         &:nth-child(2) {

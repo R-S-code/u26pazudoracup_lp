@@ -18,7 +18,7 @@
 </head>
 <body>
   <div id="loading">
-    <p>now loading!</p>
+    <img src="./images/tamadora.png">
   </div>
 
   <header class="header">
@@ -26,7 +26,7 @@
     <ul class="header__menu">
       <li><a href="#u26-pazudora-cup">U26パズドラカップ</a></li>
       <li><a href="#event-outline">開催概要</a></li>
-      <li><a href="#u26-pazudora-cup">大会商品</a></li>
+      <li><a href="#competition-reward">大会商品</a></li>
       <li><a href="#entry">エントリー</a></li>
       <li><a href="#sponsor">スポンサー</a></li>
     </ul>
@@ -60,7 +60,7 @@
         <img src="./images/fixed_entry_button_dragon.png" alt="" class="fixed-entry-button__dragon">
         <div>
           <p>エントリー</p>
-          <img src="./images/fixed_entry_button_arrow.svg" alt="">
+          <img src="./images/fixed_entry_button_arrow.svg" alt="" id="fixed-entry-button__arrow">
         </div>
       </div>
     </a>
@@ -104,8 +104,8 @@
             <div class="u26-pazudora-cup__outline">
               <h2 class="contents-title"><p>大会概要</p></h2>
               <p class="u26-pazudora-cup__outline-text up-reveal">
-                EON Financial ServiceとHALの協賛によるe-Sports U-26パズドラカップは
-                初めての方でもカジュアルにeスポーツを体験できるアマチュア大会です。
+                EON Financial ServiceとHALの協賛による<span>e-Sports U-26パズドラカップ</span>は
+                初めての方でもカジュアルにeスポーツを体験できる<span>アマチュア大会</span>です。
                 ぜひこの機会にプレイヤーとして、またその戦いを見届ける視聴者としてご参加下さい。<br>
                 プロ選手との対戦機会もあるかも...?
               </p>
@@ -116,7 +116,7 @@
             </div>
            
             <div class="u26-pazudora-cup__cm">
-              <video src="./cm.mp4" controls class="u26-pazudora-cup__cm-video right-reveal"></video>
+              <video src="./cm.mp4" controls class="u26-pazudora-cup__cm-video right-reveal"  poster="./images/poster.png"></video>
               <p class="u26-pazudora-cup__cm-tamadora"><img src="images/tamadora.png" alt="たまドラ"></p>
             </div>
           </div>
@@ -156,7 +156,6 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="event-outline__event-outline__list">
                   <p>●</p>
                   <div>
@@ -201,125 +200,128 @@
             </div>
             
             <div class="event-outline__pool-play">
-              <div class="event-outline__pool-play__outline">
-                <h2 class="event-outline__pool-play__outline-title"><p>予選リーグ</p></h2>
-                <div class="up-reveal">
-                  <div class="event-outline__pool-play__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>対戦形式</h3>
-                      <p>
-                        ランキングダンジョン
-                      </p>
+              <div class="event-outline__pool-play__container">
+                <div class="event-outline__pool-play__outline">
+                  <h2 class="event-outline__pool-play__outline-title"><p>予選リーグ</p></h2>
+                  <div class="up-reveal">
+                    <div class="event-outline__pool-play__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>対戦形式</h3>
+                        <p>
+                          ランキングダンジョン
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="event-outline__pool-play__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>参加人数</h3>
-                      <p>
-                        最大125名 最大25グループ<br>
-                        （グループ内勝ち抜け：タイムアタック）
-                      </p>
+                    <div class="event-outline__pool-play__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>参加人数</h3>
+                        <p>
+                          最大125名 最大25グループ<br>
+                          （グループ内勝ち抜け：タイムアタック）
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="event-outline__pool-play__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>闘技場</h3>
-                      <p>
-                        2又は3
-                      </p>
+                    <div class="event-outline__pool-play__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>闘技場</h3>
+                        <p>
+                          2又は3
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="event-outline__pool-play__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>試合時間</h3>
-                      <p>
-                        5分 × 3種
-                      </p>
+                    <div class="event-outline__pool-play__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>試合時間</h3>
+                        <p>
+                          5分 × 3種
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="event-outline__pool-play__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>闘技場</h3>
-                      <p>
-                        2又は3
-                      </p>
+                    <div class="event-outline__pool-play__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>闘技場</h3>
+                        <p>
+                          2又は3
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  <p class="event-outline__pool-play__outline-precaution">※後日変更の場合がございます</p>
                 </div>
-
-                <p class="event-outline__pool-play__outline-precaution">※後日変更の場合がございます</p>
+                <p class="event-outline__pool-play__curly" id="event-outline__pool-play__dragon"><img src="./images/purple_carly.png" alt="劫火の威女神・カーリー"></p>
               </div>
-              <p class="event-outline__pool-play__curly" id="event-outline__pool-play__dragon"><img src="./images/purple_carly.png" alt="劫火の威女神・カーリー"></p>
             </div>
 
             <div class="event-outline__final">
-              <p class="event-outline__final__curly" id="event-outline__final__dragon"><img src="./images/gold_carly.png" alt="綺羅の秘女神・カーリー"></p>
-              <div class="event-outline__final__outline">
-                <h2 class="event-outline__final__outline-title"><p>決勝リーグ</p></h2>
-                <div class="up-reveal">
-                  <div class="event-outline__final__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>対戦形式</h3>
-                      <p>
-                        ランキングダンジョン<br>
-                        シングルイルミネーション3バトル<br>
-                        (2バトル先取のタイムアタック)
-                      </p>
+              <div class="event-outline__final__container">
+                <p class="event-outline__final__curly" id="event-outline__final__dragon"><img src="./images/gold_carly.png" alt="綺羅の秘女神・カーリー"></p>
+                <div class="event-outline__final__outline">
+                  <h2 class="event-outline__final__outline-title"><p>決勝リーグ</p></h2>
+                  <div class="up-reveal">
+                    <div class="event-outline__final__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>対戦形式</h3>
+                        <p>
+                          ランキングダンジョン<br>
+                          シングルイルミネーション3バトル<br>
+                          (2バトル先取のタイムアタック)
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="event-outline__final__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>参加人数</h3>
+                        <p>
+                          8人
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="event-outline__final__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>ステージ</h3>
+                        <p>
+                          3種
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="event-outline__final__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>試合時間</h3>
+                        <p>
+                          5分 × 3種
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="event-outline__final__outline-list">
+                      <p>●</p>
+                      <div>
+                        <h3>闘技場</h3>
+                        <p>
+                          2又は3
+                        </p>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="event-outline__final__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>参加人数</h3>
-                      <p>
-                        8人
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="event-outline__final__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>ステージ</h3>
-                      <p>
-                        3種
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="event-outline__final__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>試合時間</h3>
-                      <p>
-                        5分 × 3種
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="event-outline__final__outline-list">
-                    <p>●</p>
-                    <div>
-                      <h3>闘技場</h3>
-                      <p>
-                        2又は3
-                      </p>
-                    </div>
-                  </div>
+                  <p class="event-outline__final__outline-precaution">※後日変更の場合がございます</p>
                 </div>
-
-                <p class="event-outline__final__outline-precaution">※後日変更の場合がございます</p>
               </div>
             </div>
 
@@ -447,6 +449,11 @@
         <div class="sponsor__bg">
           <div class="sponsor__contents">
             <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
           </div>
         </div>
       </div>
@@ -454,6 +461,14 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__organizer">
+      <h1>主催</h1>
+      <img src="./images/logo_AFS.png" alt="イオンフィナンシャルサービス">
+    </div>
+    <div class="footer__support">
+      <h1>協力</h1>
+      <img src="./images/HALtokyo.png" alt="HAL東京">
+    </div>
     <div class="footer__menu">
       <ul>
         <li><a href="https://www.aeonfinancial.co.jp/" target="_blank" rel="noopener noreferrer">イオンフィナンシャルサービス</a></li>
@@ -464,15 +479,15 @@
         <li><a href="https://jesu.or.jp/" target="_blank" rel="noopener noreferrer">e-sports</a></li>
         <li><a href="https://pad.gungho.jp/member/" target="_blank" rel="noopener noreferrer">パズル＆ドラゴンズ</a></li>
       </ul>
-      <p class="footer__pc-site-logo"><img src="./images/site_logo.png" alt="サイトロゴ"></p>
+      <p class="footer__pc-site-logo"><a href="#"><img src="./images/site_logo.png" alt="サイトロゴ"></a></p>
     </div>
-    <p class="footer__sp-site-logo"><img src="./images/site_logo.png" alt="サイトロゴ"></p>
+    <p class="footer__sp-site-logo"><a href="#"><img src="./images/site_logo.png" alt="サイトロゴ"></a></p>
     <small>©2021 HAL︎</small>
   </footer>
 
 <script>
 
-window.onload = function() {
+window.onload = ()=> {
   const loading = document.getElementById('loading');
   loading.classList.add('loaded');
 }
@@ -535,6 +550,39 @@ window.onload = function() {
   eventOutlineDetail.addEventListener("mouseleave", ()=> {
     eventOutlineDetailImage.src = "./images/i_icon.svg";
   })
+
+  // 右下固定のエントリーボタン
+  const fixedEntryButton = document.getElementById("fixed-entry-button");
+  const fixedEntryButtonArrow = document.getElementById("fixed-entry-button__arrow");
+  const entry = document.getElementById("entry");
+  const entryRect = entry.getBoundingClientRect();
+  const entryPosition = entryRect.bottom + window.pageYOffset - 500;
+
+  const scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+  );
+  
+  const pageMostBottom = scrollHeight - window.innerHeight;
+
+  window.addEventListener('scroll', ()=> {
+    if(window.scrollY > entryPosition) {
+      fixedEntryButtonArrow.style.transform =  "scaleY(-1)";
+    } else {
+      fixedEntryButtonArrow.style.transform =  "scaleY(1)";
+    }
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop >= pageMostBottom) {
+      fixedEntryButton.style.visibility = "hidden";
+      fixedEntryButton.style.opacity = "0";
+    } else {
+      fixedEntryButton.style.visibility = "visible";
+      fixedEntryButton.style.opacity = "1";
+    }
+  });
+
 </script>
 </body>
 </html>

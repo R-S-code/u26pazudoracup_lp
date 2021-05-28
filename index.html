@@ -17,6 +17,10 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+  <div id="loading">
+    <p>now loading!</p>
+  </div>
+
   <header class="header">
     <p class="header__logo"><a href="#"><img src="./images/site_logo.png" alt="サイトロゴ"></a></p>
     <ul class="header__menu">
@@ -467,6 +471,12 @@
   </footer>
 
 <script>
+
+window.onload = function() {
+  const loading = document.getElementById('loading');
+  loading.classList.add('loaded');
+}
+
   // ヘッダー
   const header__hamburgerMenu = document.getElementById("header__hamburger-menu");
   const modalHeader = document.getElementById("modal-header");

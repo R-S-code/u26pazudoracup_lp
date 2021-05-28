@@ -12,6 +12,18 @@ html {
   font-family: "NotoSansJP-Bold";
   font-size: 10px; }
 
+#loading {
+  background-color: white;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999; }
+
+.loaded {
+  display: none; }
+
 /* ヘッダー */
 .header {
   align-items: center;

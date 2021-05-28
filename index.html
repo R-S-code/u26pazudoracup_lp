@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U26パズドラカップ</title>
+  <!-- css読み込み -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- アイコン設定 -->
+  <link rel="icon" href="./images/site_logo.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/site_logo.ico">
+
+  <!-- jsライブラリ読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header class="header">
+    <p class="header__logo"><a href="#"><img src="./images/site_logo.png" alt="サイトロゴ"></a></p>
+    <ul class="header__menu">
+      <li><a href="#u26-pazudora-cup">U26パズドラカップ</a></li>
+      <li><a href="#event-outline">開催概要</a></li>
+      <li><a href="#u26-pazudora-cup">大会商品</a></li>
+      <li><a href="#entry">エントリー</a></li>
+      <li><a href="#sponsor">スポンサー</a></li>
+    </ul>
+
+    <!-- 768px以下の時に出てくるメニューアイコン -->
+    <div class="header__hamburger-menu" id="header__hamburger-menu">
+      <p class="header__hamburger-menu-line"></p>
+      <p class="header__hamburger-menu-line"></p>
+      <p class="header__hamburger-menu-line"></p>
+    </div>
+  </header>
+
+  <!-- モーダル -->
+  <div class="modal-header" id="modal-header">
+    <div class="modal-header__close-button" id="modal-header__close-button">
+      <p class="modal-header__close-button-pic"><img src="./images/modal_close_button.svg"></p>
+    </div>
+    <ul class="modal-header__menu">
+      <li><a href="#u26-pazudora-cup">U26パズドラカップ</a></li>
+      <li><a href="#event-outline">開催概要</a></li>
+      <li><a href="#competition-reward">大会商品</a></li>
+      <li><a href="#entry">エントリー</a></li>
+      <li><a href="#sponsor">スポンサー</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- 固定エントリーボタン -->
+    <a href="#entry">
+      <div class="fixed-entry-button" id="fixed-entry-button">
+        <img src="./images/fixed_entry_button_dragon.png" alt="" class="fixed-entry-button__dragon">
+        <div>
+          <p>エントリー</p>
+          <img src="./images/fixed_entry_button_arrow.svg" alt="">
+        </div>
+      </div>
+    </a>
+
+    <!-- メインビジュアル -->
+    <div class="main-visual">
+      <div class="main-visual__balls-bg">
+        <div class="main-visual__ball">
+          <p class="main-visual__ball--blue" id="main-visual__ball--blue" data-rellax-speed="0.8"><img src="./images/blue_ball.png" alt="青色パズル"></p>
+          <p class="main-visual__ball--purple" id="main-visual__ball--purple" data-rellax-speed="0.7"><img src="./images/purple_ball.png" alt="紫色パズル"></p>
+          <p class="main-visual__ball--yellow" id="main-visual__ball--yellow" data-rellax-speed="-1"><img src="./images/yellow_ball.png" alt="黄色パズル"></p>
+          <p class="main-visual__ball--red" id="main-visual__ball--red" data-rellax-speed="-0.5"><img src="./images/red_ball.png" alt="赤色パズル"></p>
+          <p class="main-visual__ball--green" id="main-visual__ball--green" data-rellax-speed="0.6"><img src="./images/green_ball.png" alt="緑色パズル"></p>
+        </div>
+        <div class="main-visual__text" data-rellax-speed="1" id="main-visual__text">
+          <p class="main-visual__text-1"><img src="./images/title_text1.png" alt=""></p>
+          <p class="main-visual__text-2"><img src="./images/title_text2.png" alt=""></p>
+          <p class="main-visual__text-3"><img src="./images/title_text3.png" alt=""></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-links">
+      <p class="top-links__youtube"><img src="./images/youtube_link.png"></p>
+      <p class="top-links__youtube-text">大会はyoutube liveで観戦できます(現地観戦もあり)</p>
+      <p class="top-links__twitter"><img src="./images/twitter_link.png"></p>
+    </div>
+
+    <!-- U26パズドラカップ -->
+    <div class="u26-pazudora-cup" id="u26-pazudora-cup">
+      <div class="contents-area__name">
+        <p class="contents-area__name-circle"><img src="./images/title_circle.svg" alt=""></p>
+        <div class="contents-area__name-text">
+          <h1 class="contents-area__name-text__title">U26パズドラカップ</h1>
+          <h1 class="contents-area__name-text__sub-title">U26 Puzzle & Dragons Cup</h1>
+        </div>
+      </div>
+      <div class="u26-pazudora-cup__bg-shadow">
+        <div class="u26-pazudora-cup__bg">
+          <div class="u26-pazudora-cup__contents">
+            <div class="u26-pazudora-cup__outline">
+              <h2 class="contents-title"><p>大会概要</p></h2>
+              <p class="u26-pazudora-cup__outline-text up-reveal">
+                EON Financial ServiceとHALの協賛によるe-Sports U-26パズドラカップは
+                初めての方でもカジュアルにeスポーツを体験できるアマチュア大会です。
+                ぜひこの機会にプレイヤーとして、またその戦いを見届ける視聴者としてご参加下さい。<br>
+                プロ選手との対戦機会もあるかも...?
+              </p>
+            </div>
+
+            <div class="u26-pazudora-cup__cm__contents-title">
+              <h2 class="contents-title"><p>CM</p></h2>
+            </div>
+           
+            <div class="u26-pazudora-cup__cm">
+              <video src="./cm.mp4" controls class="u26-pazudora-cup__cm-video right-reveal"></video>
+              <p class="u26-pazudora-cup__cm-tamadora"><img src="images/tamadora.png" alt="たまドラ"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 開催概要 -->
+    <div class="event-outline" id="event-outline">
+      <div class="contents-area__name">
+        <p class="contents-area__name-circle"><img src="./images/title_circle.svg" alt=""></p>
+        <div class="contents-area__name-text">
+          <h1 class="contents-area__name-text__title">開催概要</h1>
+          <h1 class="contents-area__name-text__sub-title">Event Outline</h1>
+        </div>
+      </div>
+      <div class="event-outline__bg-shadow">
+        <div class="event-outline__bg">
+          <div class="event-outline__contents">
+            <div class="event-outline__first-contents">
+              <div>
+                <div class="event-outline__title-map">
+                  <h2 class="contents-title"><p>マップ</p></h2>
+                </div>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.9387558002787!2d139.69694033225764!3d35.69131609693365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd6981dce11%3A0xee411b3fa3fc9f13!2zSEFM5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1621576796581!5m2!1sja!2sjp" width="280" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                <p class="event-outline__first-contents__corona-conutermeasures">
+                  <a><img src="./images/heart_icon.svg" alt="♡">コロナ感染対策について</a>
+                </p>
+              </div>
+              <div class="event-outline__event-outline up-reveal">
+                <div class="event-outline__event-outline__list">
+                  <p>●</p>
+                  <div>
+                    <h3>日程</h3>
+                    <p>
+                      2021年8月22日(日)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="event-outline__event-outline__list">
+                  <p>●</p>
+                  <div>
+                    <h3>参加料</h3>
+                    <p>
+                      無料
+                    </p>
+                  </div>
+                </div>
+
+                <div class="event-outline__event-outline__list">
+                  <p>●</p>
+                  <div>
+                    <h3>観戦料</h3>
+                    <p>
+                      無料
+                    </p>
+                  </div>
+                </div>
+
+                <div class="event-outline__event-outline__list">
+                  <p>●</p>
+                  <div>
+                    <h3>会場</h3>
+                    <p>
+                      HAL東京コクーンホールB
+                    </p>
+                  </div>
+                </div>
+
+                <div class="event-outline__event-outline__list">
+                  <p>●</p>
+                  <div>
+                    <h3>住所</h3>
+                    <p>
+                      東京都新宿区西新宿 1-7-3
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="event-outline__pool-play">
+              <div class="event-outline__pool-play__outline">
+                <h2 class="event-outline__pool-play__outline-title"><p>予選リーグ</p></h2>
+                <div class="up-reveal">
+                  <div class="event-outline__pool-play__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>対戦形式</h3>
+                      <p>
+                        ランキングダンジョン
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__pool-play__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>参加人数</h3>
+                      <p>
+                        最大125名 最大25グループ<br>
+                        （グループ内勝ち抜け：タイムアタック）
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__pool-play__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>闘技場</h3>
+                      <p>
+                        2又は3
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__pool-play__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>試合時間</h3>
+                      <p>
+                        5分 × 3種
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__pool-play__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>闘技場</h3>
+                      <p>
+                        2又は3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="event-outline__pool-play__outline-precaution">※後日変更の場合がございます</p>
+              </div>
+              <p class="event-outline__pool-play__curly" id="event-outline__pool-play__dragon"><img src="./images/purple_carly.png" alt="劫火の威女神・カーリー"></p>
+            </div>
+
+            <div class="event-outline__final">
+              <p class="event-outline__final__curly" id="event-outline__final__dragon"><img src="./images/gold_carly.png" alt="綺羅の秘女神・カーリー"></p>
+              <div class="event-outline__final__outline">
+                <h2 class="event-outline__final__outline-title"><p>決勝リーグ</p></h2>
+                <div class="up-reveal">
+                  <div class="event-outline__final__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>対戦形式</h3>
+                      <p>
+                        ランキングダンジョン<br>
+                        シングルイルミネーション3バトル<br>
+                        (2バトル先取のタイムアタック)
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__final__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>参加人数</h3>
+                      <p>
+                        8人
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__final__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>ステージ</h3>
+                      <p>
+                        3種
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__final__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>試合時間</h3>
+                      <p>
+                        5分 × 3種
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="event-outline__final__outline-list">
+                    <p>●</p>
+                    <div>
+                      <h3>闘技場</h3>
+                      <p>
+                        2又は3
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="event-outline__final__outline-precaution">※後日変更の場合がございます</p>
+              </div>
+            </div>
+
+            <button class="event-outline__detail" id="event-outline__detail"><img src="./images/i_icon.svg" alt="i" id="event-outline__detail-image">詳しくはこちら</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 大会賞品 -->
+    <div class="competition-reward" id="competition-reward">
+      <div class="contents-area__name">
+        <p class="contents-area__name-circle"><img src="./images/title_circle.svg" alt=""></p>
+        <div class="contents-area__name-text">
+          <h1 class="contents-area__name-text__title">大会賞品</h1>
+          <h1 class="contents-area__name-text__sub-title">Competition reward</h1>
+        </div>
+      </div>
+      <div class="competition-reward__bg-shadow">
+        <div class="competition-reward__bg">
+
+          <div class="competition-reward__contents">
+            <div class="competition-reward__champion">
+              <div class="competition-reward__champion-outline">
+                <h2 class="contents-title competition-reward__champion-contents-title"><p>優勝者</p></h2>
+                <p class="competition-reward__champion-outline__description up-reveal"><span>iPad Air</span> 10.9インチ 64GB Wi-Fiモデル MYFM2J/A スペースグレイ（第4世代） [64GB]</p>
+              </div>
+              <p class="competition-reward__champion__prize-image">
+                <img class="competition-reward__champion__prize-image-pc" src="./images/prize1.png" alt="優勝者賞品画像">
+                <img class="competition-reward__champion__prize-image-sp" src="./images/sp_prize1.png" alt="優勝者賞品画像">
+              </p>
+            </div>
+
+            <div class="competition-reward__tops">
+              <div class="competition-reward__tops-outline">
+                <h2 class="contents-title competition-reward__tops-contents-title"><p>上位1~5位</p></h2>
+                <p class="competition-reward__tops-outline__description up-reveal"><span>ゲーミングチェア</span> サンワサプライ SNC-L18GY</p>
+              </div>
+               <p class="competition-reward__tops__prize-image">
+                <img class="competition-reward__tops__prize-image-pc" src="./images/prize2.png" alt="上位1~5位賞品画像">
+                <img class="competition-reward__tops__prize-image-sp" src="./images/sp_prize2.png" alt="上位1~5位優勝者賞品画像">
+              </p>
+            </div>
+            
+            <div class="competition-reward__others">
+              <div class="competition-reward__others-outline">
+                <h2 class="contents-title competition-reward__others-contents-title"><p>その他上位者</p></h2>
+                <p class="competition-reward__others-outline__description up-reveal"><span>iPad Air</span> 10.9インチ 64GB Wi-Fiモデル MYFM2J/A スペースグレイ（第4世代） [64GB]</p>
+              </div>
+
+              <p class="competition-reward__others__prize-image">
+                <img class="competition-reward__others__prize-image-pc" src="./images/prize1.png" alt="その他上位者賞品画像">
+                <img class="competition-reward__others__prize-image-sp" src="./images/sp_prize1.png" alt="その他上位者賞品画像">
+              </p>
+            </div>
+
+            <!-- <div class="competition-reward__participation">
+              <div class="competition-reward__participation-outline">
+                <h2 class="contents-title competition-reward__participation-contents-title"><p>参加賞</p></h2>
+                <p class="competition-reward__participation-outline__description"><span>iPad Air</span> 10.9インチ 64GB Wi-Fiモデル MYFM2J/A スペースグレイ（第4世代） [64GB]</p>
+              </div>
+              <p class="competition-reward__participation__prize-image"><img src="./images/prize2.png" alt="参加賞画像"></p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- エントリー -->
+    <div class="entry" id="entry">
+      <div class="contents-area__name">
+        <p class="contents-area__name-circle"><img src="./images/title_circle.svg" alt=""></p>
+        <div class="contents-area__name-text">
+          <h1 class="contents-area__name-text__title">エントリー</h1>
+          <h1 class="contents-area__name-text__sub-title">Entry</h1>
+        </div>
+      </div>
+      <div class="entry__bg-shadow">
+        <div class="entry__bg">
+          <div class="entry__contents">
+            <div class="entry__player-entry">
+              <h2 class="contents-title"><p>ゲーム参加条件</p></h2>
+              <ul class="entry__player-entry__list up-reveal">
+                <li>①日本国内に在住していること</li>
+                <li>②16歳以上26歳以下であること<span>(2005年8月22日以前に生まれた者であること)</span></li>
+                <li>③イベント当日にHAL東京ホールに来場できること</li>
+              </ul>
+
+              <div class="entry__player-entry__button">
+                <div class="entry__player-entry__button__text" id="entry__player-entry__button__text"> 
+                  <p>競技参加者 申し込み</p>
+                </div>
+               
+                <div class="entry__player-entry__button__bg--red" id="entry__player-entry__button__bg--red"></div>
+                <div class="entry__player-entry__button__bg--blue" id="entry__player-entry__button__bg--blue"></div>
+                <img src="./images/volcano_dragon.png" alt="ボルケーノドラゴン" class="entry__player-entry__button__dragon">  
+
+              </div>
+            </div>
+
+            <div class="entry__spectator-entry">
+              <h2 class="contents-title"><p>現地観戦</p></h2>
+              <p class="entry__spectator-entry__text up-reveal">
+                当日はHAL東京コクーンホールにて観戦することができます。<br>
+                お申し込みの上、ご参加ください。
+              </p>
+              <p class="entry__spectator-entry__pc-button"><img src="./images/pc_spectator_entry_button.png" alt="現地観覧車申し込み"></p>
+              <p class="entry__spectator-entry__sp-button"><img src="./images/sp_spectator_entry_button.png" alt="現地観覧車申し込み"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- スポンサー -->
+    <div class="sponsor" id="sponsor">
+      <div class="contents-area__name">
+        <p class="contents-area__name-circle"><img src="./images/title_circle.svg" alt=""></p>
+        <div class="contents-area__name-text">
+          <h1 class="contents-area__name-text__title">スポンサー</h1>
+          <h1 class="contents-area__name-text__sub-title">sponsor</h1>
+        </div>
+      </div>
+      <div class="sponsor__bg-shadow">
+        <div class="sponsor__bg">
+          <div class="sponsor__contents">
+            <img src="./images/i-hearts_logo.png" alt="アイハーツロゴ">  
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__menu">
+      <ul>
+        <li><a href="https://www.aeonfinancial.co.jp/" target="_blank" rel="noopener noreferrer">イオンフィナンシャルサービス</a></li>
+        <li><a href="https://www.hal.ac.jp/tokyo" target="_blank" rel="noopener noreferrer">HAL東京</a></li>
+        <li><a>プライバシーポリシー</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://jesu.or.jp/" target="_blank" rel="noopener noreferrer">e-sports</a></li>
+        <li><a href="https://pad.gungho.jp/member/" target="_blank" rel="noopener noreferrer">パズル＆ドラゴンズ</a></li>
+      </ul>
+      <p class="footer__pc-site-logo"><img src="./images/site_logo.png" alt="サイトロゴ"></p>
+    </div>
+    <p class="footer__sp-site-logo"><img src="./images/site_logo.png" alt="サイトロゴ"></p>
+    <small>©2021 HAL︎</small>
+  </footer>
+
+<script>
+  // ヘッダー
+  const header__hamburgerMenu = document.getElementById("header__hamburger-menu");
+  const modalHeader = document.getElementById("modal-header");
+  const modalHeader__closeButton = document.getElementById("modal-header__close-button");
+
+  header__hamburgerMenu.addEventListener("click", ()=> {
+    header__hamburgerMenu.style.display = "none";
+    modalHeader.style.transform = "translateX(0)";
+  })
+
+  modalHeader__closeButton.addEventListener("click", ()=> {
+    header__hamburgerMenu.style.display = "block";
+    modalHeader.style.transform = "translateX(50vw)";
+  })
+
+  // メインビジュアルパズル
+  const mainVisual__ballBlue = document.getElementById("main-visual__ball--blue");
+  const mainVisual__ballPurple = document.getElementById("main-visual__ball--purple");
+  const mainVisual__ballYellow = document.getElementById("main-visual__ball--yellow");
+  const mainVisual__ballRed = document.getElementById("main-visual__ball--red");
+  const mainVisual__ballGreen = document.getElementById("main-visual__ball--green");
+
+
+  // Rellax, ScrollReveal
+  const mainVisualTextRellax = new Rellax('#main-visual__text');
+  const mainVisualBallBlueRellax = new Rellax('#main-visual__ball--blue');
+  const mainVisualBallRedRellax = new Rellax('#main-visual__ball--red');
+  const mainVisualBallYellowRellax = new Rellax('#main-visual__ball--yellow');
+  const mainVisualBallPurpleRellax = new Rellax('#main-visual__ball--purple');
+  const mainVisualBallGreenRellax = new Rellax('#main-visual__ball--green');
+
+
+  ScrollReveal().reveal('.right-reveal', {
+    distance: '2.5rem',
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'left',
+    reset: true,
+    viewFactor: 0.4
+  });
+  ScrollReveal().reveal('.up-reveal', {
+    distance: '2.5rem',
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'bottom',
+    reset: true,
+    viewFactor: 0.6
+  });
+
+  // 詳しくをホバー時画像差し替え
+  const eventOutlineDetail = document.getElementById("event-outline__detail");
+  const eventOutlineDetailImage = document.getElementById("event-outline__detail-image");
+  eventOutlineDetail.addEventListener("mouseover", ()=> {
+    eventOutlineDetailImage.src = "./images/i_icon_black.svg";
+  })
+  eventOutlineDetail.addEventListener("mouseleave", ()=> {
+    eventOutlineDetailImage.src = "./images/i_icon.svg";
+  })
+</script>
+</body>
+</html>

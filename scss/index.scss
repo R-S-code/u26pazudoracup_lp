@@ -1532,6 +1532,7 @@ main {
     padding-top: spCalculation(60);
     transform: translateY(spCalculation(70));
     &__bg {
+      padding: spCalculation(80) 0;
       @include contents-area-bg(spCalculation(460));
       &-shadow {
         @include contents-area-bg-shadow(spCalculation(460));

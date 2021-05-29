@@ -545,8 +545,8 @@ main {
 
 // u26-pazudora-cup
 .u26-pazudora-cup {
-  margin-top: spCalculation(-30);
-  padding-top: spCalculation(60);
+  margin-top: -3rem;
+  padding-top: 12rem;
   &__bg {
     @include contents-area-bg(100rem);
     &-shadow {
@@ -1039,7 +1039,7 @@ main {
     height: 41rem;
     margin-top: 2rem;
     &-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center;
       &__description {
         color: white;
@@ -1076,7 +1076,7 @@ main {
     height: 41rem;
     margin-top: 7.5rem;
     &-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center;
       width: 100%;
       &__description {
@@ -1115,7 +1115,7 @@ main {
     height: 41rem;
     margin-top: 7.5rem;
     &-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center;
       &__description {
         color: white;
@@ -1501,8 +1501,9 @@ main {
 
 // スポンサー
 .sponsor {
-  margin-top: 3rem;
-  transform: translateY(14rem);
+  margin-top: 0;
+  padding-top: 12rem;
+  transform: translateY(4rem);
   &__bg {
     padding: 12rem 2rem 0;
     @include contents-area-bg(45rem);

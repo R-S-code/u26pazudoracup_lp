@@ -385,8 +385,8 @@ main {
     .contents-title p {
       font-size: 4.8309178744vw; } }
 .u26-pazudora-cup {
-  margin-top: -7.2463768116vw;
-  padding-top: 14.4927536232vw; }
+  margin-top: -3rem;
+  padding-top: 12rem; }
   .u26-pazudora-cup__bg {
     background-color: #fce34c;
     height: 100rem; }
@@ -766,7 +766,7 @@ main {
     height: 41rem;
     margin-top: 2rem; }
     .competition-reward__champion-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center; }
       .competition-reward__champion-outline__description {
         color: white;
@@ -795,7 +795,7 @@ main {
     height: 41rem;
     margin-top: 7.5rem; }
     .competition-reward__tops-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center;
       width: 100%; }
       .competition-reward__tops-outline__description {
@@ -826,7 +826,7 @@ main {
     height: 41rem;
     margin-top: 7.5rem; }
     .competition-reward__others-outline {
-      margin-top: 6.5rem;
+      margin: 6.5rem auto 0;
       text-align: center; }
       .competition-reward__others-outline__description {
         color: white;
@@ -1123,8 +1123,9 @@ main {
         margin: 9.6618357488vw 0 0;
         text-align: left; } }
 .sponsor {
-  margin-top: 3rem;
-  transform: translateY(14rem); }
+  margin-top: 0;
+  padding-top: 12rem;
+  transform: translateY(4rem); }
   .sponsor__bg {
     padding: 12rem 2rem 0;
     background-color: #fce34c;

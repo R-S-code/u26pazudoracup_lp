@@ -122,7 +122,8 @@ html {
         margin-top: 9.6618357488vw; }
         .modal-header__menu li a {
           color: white;
-          cursor: pointer; }
+          cursor: pointer;
+          text-decoration: none; }
           .modal-header__menu li a:hover {
             color: #fce34c; }
     .modal-header__close-button {
@@ -135,12 +136,12 @@ html {
         width: 6.038647343vw; } }
 .fixed-entry-button {
   align-items: center;
-  bottom: 1.5rem;
+  bottom: 3rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1rem;
+  right: 3rem;
   transition: 0.2s;
   z-index: 99; }
   .fixed-entry-button:hover {
@@ -148,7 +149,7 @@ html {
   .fixed-entry-button__dragon {
     bottom: 12rem;
     position: absolute;
-    width: 13.5rem;
+    width: 12rem;
     z-index: 2; }
   .fixed-entry-button div {
     align-items: center;
@@ -160,9 +161,9 @@ html {
     display: flex;
     flex-direction: column;
     font-size: 2.4rem;
-    height: 15.5rem;
+    height: 14rem;
     justify-content: center;
-    width: 15.5rem; }
+    width: 14rem; }
     .fixed-entry-button div p {
       margin-top: 2rem;
       margin-bottom: 1.5rem; }

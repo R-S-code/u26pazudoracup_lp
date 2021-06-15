@@ -97,7 +97,6 @@ html {
   background-color: $header-bg-black;
   box-sizing: border-box;
   display: flex;
-  font-size: 1.8rem;
   height: 15rem;
   padding: 0 4.5rem 0 3rem;
   position: fixed;
@@ -108,7 +107,7 @@ html {
   &__menu {
     cursor: pointer;
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     justify-content: space-between;
     margin-top: $default-padding;
     transform: skewY(3deg);
@@ -609,6 +608,7 @@ main {
 
 @media screen and (max-width: $break-point-sp) {
   .u26-pazudora-cup {
+    padding-top: spCalculation(60);
     &__bg {
       @include contents-area-bg(spCalculation(915));
       &-shadow {
@@ -669,8 +669,8 @@ main {
   }
   &__contents {
     // background-image: url("../images/pazudora_emblem.png");
-    // overflow: hidden;
-    padding-top: 8rem;
+    overflow: hidden;
+    padding-top: 12rem;
     transform: skewY(8deg);
   }
   &__title-map {
@@ -680,20 +680,10 @@ main {
     display: flex;
     margin: 0 auto;
     width: 68rem;
-    &__corona-conutermeasures {
-      align-items: center;
-      border-bottom: 1px solid black;
-      display: flex;
-      font-size: 1.8rem;
-      justify-content: left; 
-      margin-top: 1rem;
-      padding-bottom: 1rem;
-      width: 22rem;
-    }
   }
   &__event-outline {
     margin-top: 5rem;
-    margin-left: 6rem;
+    margin-left: auto;
     display: inline-block;
     &__bg {
       width: 46rem;
@@ -720,9 +710,8 @@ main {
   }
   &__pool-play {
     background-color: #443f21;
-  
     height: 42rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
   
     &__container {
       display: flex;
@@ -913,11 +902,6 @@ main {
       iframe {
         height: spCalculation(240);
         width: 100%;
-      }
-      &__corona-conutermeasures {
-        margin: spCalculation(10) auto;
-        font-size: spCalculation(18);
-        width: spCalculation(225);
       }
     }
     &__event-outline {
@@ -1309,9 +1293,9 @@ main {
   margin-top: 3rem;
   padding-top: 12rem;
   &__bg {
-    @include contents-area-bg(125rem);
+    @include contents-area-bg(185rem);
     &-shadow {
-      @include contents-area-bg-shadow(130rem);
+      @include contents-area-bg-shadow(190rem);
     }
   }
   &__contents {
@@ -1323,16 +1307,26 @@ main {
     width: 68rem;
     &__list {
       font-size: 1.6rem;
-      margin-top: 3.8rem;
+      line-height: 2.5rem;
+      list-style: inside;
+      margin-top: 4rem;
       margin-left: 3.5rem;
       li:not(:first-child) {
         margin-top: 1.4rem;
       }
+      li {
+        letter-spacing: 0.1rem;
+        margin-left: 1.6em;
+	      text-indent: -1.6em;
+      }
+      span {
+        font-size: 1.4rem;
+      }
     }
     &__button {
-      margin-top: 22rem;
+      margin: 25rem auto 0;
       position: relative;
-      transform: translateX(10rem);
+      transform: translateX(-5rem);
       transition: 0.2s;
       width: 37.5rem;
       &__text {
@@ -1380,7 +1374,6 @@ main {
     }
   }
   &__spectator-entry {
-    cursor: pointer;
     margin: 45rem auto 0;
     width: 68rem;
     &__text {
@@ -1388,6 +1381,7 @@ main {
       line-height: 3rem;
       margin-top: 4.5rem;
       margin-left: 3.5rem;
+      text-align: center;
     }
     &__pc-button {
       margin-top: 4rem;
@@ -1507,9 +1501,9 @@ main {
   transform: translateY(4rem);
   &__bg {
     padding: 12rem 2rem 0;
-    @include contents-area-bg(45rem);
+    @include contents-area-bg(80rem);
     &-shadow {
-      @include contents-area-bg-shadow(45rem);
+      @include contents-area-bg-shadow(80rem);
     }
   }
   &__contents {
@@ -1518,12 +1512,23 @@ main {
     flex-wrap: wrap;
     transform: skewY(8deg);
     justify-content: space-evenly;
-    margin: 0 auto;
-    max-width: 76rem;
-    img {
-      display: block;
-      margin: 1rem 2rem;
-      width: 15rem;
+    padding: 4rem 0;
+    margin: 5rem auto 0;
+    max-width: 85rem;
+    width: 100%;
+    p {
+      align-items: center;
+      background-color: white;
+      display: flex;
+      height: 9rem;
+      justify-content: center;
+      margin: 4rem 5rem;
+      width: 25rem;
+      img {
+        display: block;
+        margin: 1rem 2rem;
+        width: 18rem;
+      }
     }
   }
 }

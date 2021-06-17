@@ -633,6 +633,7 @@ main {
     }
     &__cm {
       &__contents-title {
+        margin-top: spCalculation(70);
         margin-left: spCalculation(30);
         width: 50%;
       } 

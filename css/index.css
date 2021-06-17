@@ -53,7 +53,7 @@ html {
   box-sizing: border-box;
   display: flex;
   height: 15rem;
-  padding: 0 4.5rem 0 3rem;
+  padding: 0 6rem 0 3rem;
   position: fixed;
   transform: skewY(-3deg);
   transform-origin: top left;
@@ -482,9 +482,10 @@ main {
       height: 160rem;
       transform: skewY(-8deg); }
   .event-outline__contents {
-    overflow: hidden;
     padding-top: 12rem;
     transform: skewY(8deg); }
+    .event-outline__contents a {
+      text-decoration: none; }
   .event-outline__title-map {
     margin-bottom: 2rem; }
   .event-outline__first-contents {
@@ -515,16 +516,16 @@ main {
   .event-outline__pool-play {
     background-color: #443f21;
     height: 42rem;
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    overflow: hidden; }
     .event-outline__pool-play__container {
       display: flex;
       justify-content: center;
       margin: 0 auto;
       max-width: 100rem; }
-    .event-outline__pool-play__curly {
-      margin-left: auto;
-      overflow: hidden; }
-      .event-outline__pool-play__curly img {
+    .event-outline__pool-play__dragon {
+      margin-left: auto; }
+      .event-outline__pool-play__dragon img {
         height: 42rem; }
     .event-outline__pool-play__outline {
       margin: 4.5rem auto 0;
@@ -555,10 +556,17 @@ main {
             line-height: 3rem;
             margin-left: 3.5rem;
             margin-top: -0.75rem; }
+            .event-outline__pool-play__outline-list div p a {
+              color: #4BDCC2;
+              text-decoration: none; }
+              .event-outline__pool-play__outline-list div p a:hover {
+                opacity: 0.8; }
       .event-outline__pool-play__outline-precaution {
         color: #fce34c;
         font-size: 1.2rem;
-        margin-top: 1.2rem; }
+        line-height: 1.5rem;
+        margin-top: 1.2rem;
+        margin-left: 2.5rem; }
   .event-outline__final {
     background-color: white;
     height: 42rem;
@@ -568,10 +576,10 @@ main {
       justify-content: center;
       margin: 0 auto;
       max-width: 100rem; }
-    .event-outline__final__curly {
+    .event-outline__final__dragon {
       margin-right: auto;
       overflow: hidden; }
-      .event-outline__final__curly img {
+      .event-outline__final__dragon img {
         height: 42rem; }
     .event-outline__final__outline {
       margin: 4.5rem auto 8rem;
@@ -594,13 +602,18 @@ main {
           border-bottom: 0.1rem solid black;
           display: flex;
           margin-left: 1rem;
-          width: 38.5rem; }
+          width: 44rem; }
           .event-outline__final__outline-list div h3 {
             width: 10rem; }
           .event-outline__final__outline-list div p {
             line-height: 3rem;
             margin-left: 3.5rem;
             margin-top: -0.75rem; }
+            .event-outline__final__outline-list div p a {
+              color: #4BDCC2;
+              text-decoration: none; }
+              .event-outline__final__outline-list div p a:hover {
+                opacity: 0.8; }
       .event-outline__final__outline-precaution {
         color: black;
         font-size: 1.2rem;
@@ -631,10 +644,10 @@ main {
       color: black; }
 
 @media screen and (max-width: 1000px) {
-  .event-outline__pool-play__curly {
+  .event-outline__pool-play__dragon {
     transition: 0.2s;
     margin-right: -4rem; }
-  .event-outline__final__curly {
+  .event-outline__final__dragon {
     transition: 0.2s;
     margin-left: -4rem; } }
 @media screen and (max-width: 768px) {
@@ -679,7 +692,7 @@ main {
             margin-top: -1.8115942029vw; }
     .event-outline__pool-play {
       height: 96.6183574879vw; }
-      .event-outline__pool-play__curly {
+      .event-outline__pool-play__dragon {
         display: none; }
       .event-outline__pool-play__outline {
         margin: 0 auto;
@@ -704,7 +717,7 @@ main {
               width: 47.1014492754vw; }
     .event-outline__final {
       height: 108.6956521739vw; }
-      .event-outline__final__curly {
+      .event-outline__final__dragon {
         display: none; }
       .event-outline__final__outline {
         margin: 0 auto;
@@ -737,15 +750,263 @@ main {
       .event-outline__detail img {
         margin-right: 2.4154589372vw;
         width: 6.7632850242vw; } }
+.guest {
+  margin-top: 3rem;
+  padding-top: 12rem; }
+  .guest__bg {
+    background-color: #fce34c;
+    height: 105rem; }
+    .guest__bg-shadow {
+      background-color: #e7d04b;
+      height: 110rem;
+      transform: skewY(-8deg); }
+    .guest__bg__bg {
+      background-color: #fce34c;
+      height: 105rem; }
+      .guest__bg__bg-shadow {
+        background-color: #e7d04b;
+        height: 110rem;
+        transform: skewY(-8deg); }
+  .guest__contents {
+    padding-top: 16rem;
+    transform: skewY(8deg); }
+  .guest__guest-img {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100rem;
+    min-width: 0;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1; }
+    .guest__guest-img img {
+      display: block;
+      height: auto;
+      max-width: 25rem;
+      min-width: 0;
+      width: 100%; }
+      .guest__guest-img img:first-child {
+        transform: translateY(5rem); }
+      .guest__guest-img img:last-child {
+        transform: translateY(-5rem); }
+  .guest__profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 10rem 2rem;
+    transform: skewY(8deg); }
+    .guest__profile-bg {
+      background-color: #443f21;
+      transform: skewY(-8deg) translateY(-10rem); }
+    .guest__profile-container {
+      color: white;
+      font-size: 1.6rem;
+      margin: 3rem 1rem;
+      max-width: 25rem;
+      width: 100%; }
+      .guest__profile-container:first-child {
+        transform: translateY(5rem); }
+      .guest__profile-container:last-child {
+        transform: translateY(-5rem); }
+      .guest__profile-container p:first-child {
+        color: #fce34c;
+        font-size: 2rem;
+        text-align: center; }
+      .guest__profile-container p:nth-child(2) {
+        line-height: 2.5rem;
+        margin-top: 2rem; }
+      .guest__profile-container p:nth-child(3) {
+        line-height: 2.5rem;
+        margin-top: 4rem; }
+      .guest__profile-container p:last-child {
+        margin-top: 5rem;
+        text-align: center; }
+        .guest__profile-container p:last-child img {
+          width: 5rem; }
+      .guest__profile-container a {
+        cursor: pointer; }
+        .guest__profile-container a:hover {
+          opacity: 0.8; }
+    .guest__profile-career {
+      margin: 3rem 0 0; }
+      .guest__profile-career ul {
+        margin-top: 1rem;
+        display: flex; }
+        .guest__profile-career ul li {
+          line-height: 2rem; }
+        .guest__profile-career ul li:first-child {
+          margin-right: 1rem;
+          white-space: nowrap; }
+  .guest-sp__su {
+    display: none; }
+  .guest-sp__kosuke {
+    display: none; }
+  .guest-sp__gaimon {
+    display: none; }
+
+@media screen and (max-width: 768px) {
+  .guest {
+    margin-top: 0;
+    padding-top: 14.4927536232vw; }
+    .guest__bg {
+      background-color: #fce34c;
+      height: 664.2512077295vw; }
+      .guest__bg-shadow {
+        background-color: #e7d04b;
+        height: 673.9130434783vw;
+        transform: skewY(-8deg); }
+    .guest__contents {
+      padding-top: 24.154589372vw; }
+    .guest__guest-img {
+      display: none; }
+    .guest__profile {
+      display: none; }
+    .guest-sp__su {
+      display: block; }
+      .guest-sp__su-img {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 64.0096618357vw;
+        z-index: 1; }
+      .guest-sp__su-profile {
+        background-color: #443f21;
+        box-sizing: border-box;
+        height: 132.8502415459vw;
+        padding-top: 38.6473429952vw;
+        text-align: center;
+        transform: skewY(-8deg) translateY(-33.8164251208vw); }
+        .guest-sp__su-profile p {
+          transform: skewY(8deg); }
+        .guest-sp__su-profile div {
+          transform: skewY(8deg); }
+        .guest-sp__su-profile__role {
+          color: #fce34c;
+          font-size: 4.8309178744vw; }
+        .guest-sp__su-profile__introduce {
+          color: white;
+          font-size: 3.8647342995vw;
+          line-height: 6.038647343vw;
+          margin: 7.2463768116vw auto 0;
+          width: 67.6328502415vw; }
+        .guest-sp__su-profile__career {
+          margin: 9.6618357488vw auto 0;
+          width: 67.6328502415vw; }
+          .guest-sp__su-profile__career ul {
+            color: white;
+            display: flex;
+            font-size: 3.8647342995vw;
+            margin-top: 2.4154589372vw; }
+            .guest-sp__su-profile__career ul li:first-child {
+              margin-right: 3.6231884058vw; }
+        .guest-sp__su-profile__twitter {
+          display: block;
+          margin: 7.2463768116vw auto 0;
+          transform: skewY(8deg);
+          width: 10.1449275362vw; }
+          .guest-sp__su-profile__twitter:hover {
+            opacity: 0.8; }
+    .guest-sp__kosuke {
+      display: block; }
+      .guest-sp__kosuke-img {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 64.0096618357vw;
+        z-index: 1; }
+      .guest-sp__kosuke-profile {
+        background-color: #443f21;
+        box-sizing: border-box;
+        height: 132.8502415459vw;
+        padding-top: 38.6473429952vw;
+        text-align: center;
+        transform: skewY(-8deg) translateY(-33.8164251208vw); }
+        .guest-sp__kosuke-profile p {
+          transform: skewY(8deg); }
+        .guest-sp__kosuke-profile div {
+          transform: skewY(8deg); }
+        .guest-sp__kosuke-profile__role {
+          color: #fce34c;
+          font-size: 4.8309178744vw; }
+        .guest-sp__kosuke-profile__introduce {
+          color: white;
+          font-size: 3.8647342995vw;
+          line-height: 6.038647343vw;
+          margin: 7.2463768116vw auto 0;
+          width: 67.6328502415vw; }
+        .guest-sp__kosuke-profile__career {
+          margin: 9.6618357488vw auto 0;
+          width: 67.6328502415vw; }
+          .guest-sp__kosuke-profile__career ul {
+            color: white;
+            display: flex;
+            font-size: 3.8647342995vw;
+            margin-top: 2.4154589372vw; }
+            .guest-sp__kosuke-profile__career ul li:first-child {
+              margin-right: 3.6231884058vw; }
+        .guest-sp__kosuke-profile__twitter {
+          display: block;
+          margin: 7.2463768116vw auto 0;
+          transform: skewY(8deg);
+          width: 10.1449275362vw; }
+          .guest-sp__kosuke-profile__twitter:hover {
+            opacity: 0.8; }
+    .guest-sp__gaimon {
+      display: block; }
+      .guest-sp__gaimon-img {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 64.0096618357vw;
+        z-index: 1; }
+      .guest-sp__gaimon-profile {
+        background-color: #443f21;
+        box-sizing: border-box;
+        height: 132.8502415459vw;
+        padding-top: 38.6473429952vw;
+        text-align: center;
+        transform: skewY(-8deg) translateY(-33.8164251208vw); }
+        .guest-sp__gaimon-profile p {
+          transform: skewY(8deg); }
+        .guest-sp__gaimon-profile div {
+          transform: skewY(8deg); }
+        .guest-sp__gaimon-profile__role {
+          color: #fce34c;
+          font-size: 4.8309178744vw; }
+        .guest-sp__gaimon-profile__introduce {
+          color: white;
+          font-size: 3.8647342995vw;
+          line-height: 6.038647343vw;
+          margin: 7.2463768116vw auto 0;
+          width: 67.6328502415vw; }
+        .guest-sp__gaimon-profile__career {
+          margin: 9.6618357488vw auto 0;
+          width: 67.6328502415vw; }
+          .guest-sp__gaimon-profile__career ul {
+            color: white;
+            display: flex;
+            font-size: 3.8647342995vw;
+            margin-top: 2.4154589372vw; }
+            .guest-sp__gaimon-profile__career ul li:first-child {
+              margin-right: 3.6231884058vw; }
+        .guest-sp__gaimon-profile__twitter {
+          display: block;
+          margin: 7.2463768116vw auto 0;
+          transform: skewY(8deg);
+          width: 10.1449275362vw; }
+          .guest-sp__gaimon-profile__twitter:hover {
+            opacity: 0.8; } }
 .competition-reward {
   margin-top: 3rem;
   padding-top: 12rem; }
   .competition-reward__bg {
     background-color: #fce34c;
-    height: 175rem; }
+    height: 220rem; }
     .competition-reward__bg-shadow {
       background-color: #e7d04b;
-      height: 180rem;
+      height: 225rem;
       transform: skewY(-8deg); }
   .competition-reward__contents {
     padding-top: 12rem;
@@ -765,14 +1026,14 @@ main {
         font-size: 2.4rem;
         height: 80%;
         justify-content: center;
-        padding-left: 1rem;
-        line-height: 4rem; }
+        padding-left: 1rem; }
+        .competition-reward__champion-outline__description p:not(:first-child) {
+          margin-top: 2rem; }
         .competition-reward__champion-outline__description span {
-          font-size: 3.6rem; }
+          font-size: 1.4rem; }
     .competition-reward__champion-contents-title {
       background-color: #fce34c; }
     .competition-reward__champion__prize-image {
-      margin-left: auto;
       text-align: right;
       width: 50rem; }
       .competition-reward__champion__prize-image-pc {
@@ -794,15 +1055,15 @@ main {
         font-size: 2.4rem;
         height: 80%;
         justify-content: center;
-        line-height: 4rem;
         padding-left: 1rem; }
+        .competition-reward__tops-outline__description p:not(:first-child) {
+          margin-top: 2rem; }
         .competition-reward__tops-outline__description span {
-          font-size: 3.6rem; }
+          font-size: 1.4rem; }
     .competition-reward__tops-contents-title {
       background-color: black;
       color: white; }
     .competition-reward__tops__prize-image {
-      margin-left: auto;
       text-align: right;
       width: 50rem; }
       .competition-reward__tops__prize-image-pc {
@@ -832,11 +1093,11 @@ main {
     .competition-reward__others-contents-title {
       background-color: #fce34c; }
     .competition-reward__others__prize-image {
-      margin-left: auto;
       text-align: right;
       width: 50rem; }
       .competition-reward__others__prize-image-pc {
-        height: 41rem; }
+        height: 41.1rem;
+        transform: translateY(-0.1rem); }
       .competition-reward__others__prize-image-sp {
         display: none; }
   .competition-reward__participation {
@@ -870,17 +1131,17 @@ main {
     padding-top: 14.4927536232vw; }
     .competition-reward__bg {
       background-color: #fce34c;
-      height: 555.5555555556vw; }
+      height: 869.5652173913vw; }
       .competition-reward__bg-shadow {
         background-color: #e7d04b;
-        height: 565.2173913043vw;
+        height: 879.2270531401vw;
         transform: skewY(-8deg); }
     .competition-reward__contents {
       padding-top: 19.3236714976vw; }
     .competition-reward__champion {
       display: flex;
       flex-direction: column;
-      height: 157.0048309179vw; }
+      height: 193.2367149758vw; }
       .competition-reward__champion-outline {
         margin-top: 12.077294686vw;
         text-align: center; }
@@ -890,25 +1151,27 @@ main {
           font-size: 5.7971014493vw;
           height: 57.9710144928vw;
           justify-content: center;
-          line-height: 9.6618357488vw;
-          padding: 0 2.4154589372vw; }
+          line-height: 6.038647343vw;
+          padding: 8.4541062802vw 2.4154589372vw 12.077294686vw; }
+          .competition-reward__champion-outline__description p:not(:first-child) {
+            margin-top: 3.6231884058vw; }
           .competition-reward__champion-outline__description span {
-            font-size: 8.6956521739vw; }
+            font-size: 3.8647342995vw; }
         .competition-reward__champion-outline-contents-title {
           background-color: #fce34c; }
       .competition-reward__champion__prize-image {
-        margin-left: 0;
-        text-align: center;
+        overflow: hidden;
         width: 100%; }
         .competition-reward__champion__prize-image-pc {
           display: none; }
         .competition-reward__champion__prize-image-sp {
           display: inline-block;
-          width: 100%; }
+          width: 101%; }
     .competition-reward__tops {
       display: flex;
       flex-direction: column;
-      height: 157.0048309179vw; }
+      height: 193.2367149758vw;
+      margin-top: 19.3236714976vw; }
       .competition-reward__tops-outline {
         margin-top: 12.077294686vw;
         text-align: center; }
@@ -918,23 +1181,28 @@ main {
           font-size: 5.7971014493vw;
           height: 57.9710144928vw;
           justify-content: center;
-          line-height: 9.6618357488vw;
-          padding: 0 2.4154589372vw; }
+          line-height: 6.038647343vw;
+          padding: 8.4541062802vw 2.4154589372vw 12.077294686vw; }
+          .competition-reward__tops-outline__description p:not(:first-child) {
+            margin-top: 3.6231884058vw; }
           .competition-reward__tops-outline__description span {
-            font-size: 8.6956521739vw; }
+            font-size: 3.8647342995vw; }
         .competition-reward__tops-outline-contents-title {
           background-color: #fce34c; }
       .competition-reward__tops__prize-image {
+        overflow: hidden;
+        transform: translateX(-0.2415458937vw);
         width: 100%; }
         .competition-reward__tops__prize-image-pc {
           display: none; }
         .competition-reward__tops__prize-image-sp {
           display: block;
-          width: 100%; }
+          width: 101%; }
     .competition-reward__others {
       display: flex;
       flex-direction: column;
-      height: 157.0048309179vw; }
+      height: 193.2367149758vw;
+      margin-top: 19.3236714976vw; }
       .competition-reward__others-outline {
         margin-top: 12.077294686vw;
         text-align: center; }
@@ -945,40 +1213,49 @@ main {
           height: 57.9710144928vw;
           justify-content: center;
           line-height: 9.6618357488vw;
-          padding: 0 2.4154589372vw; }
+          padding: 8.4541062802vw 2.4154589372vw 12.077294686vw; }
+          .competition-reward__others-outline__description p:not(:first-child) {
+            margin-top: 3.6231884058vw; }
           .competition-reward__others-outline__description span {
-            font-size: 8.6956521739vw; }
+            font-size: 3.8647342995vw; }
         .competition-reward__others-outline-contents-title {
           background-color: #fce34c; }
       .competition-reward__others__prize-image {
+        overflow: hidden;
         width: 100%; }
         .competition-reward__others__prize-image-pc {
           display: none; }
         .competition-reward__others__prize-image-sp {
           display: block;
-          width: 100%; } }
+          width: 101%; } }
 .entry {
   margin-top: 3rem;
   padding-top: 12rem; }
   .entry__bg {
     background-color: #fce34c;
-    height: 185rem; }
+    height: 140rem; }
     .entry__bg-shadow {
       background-color: #e7d04b;
-      height: 190rem;
+      height: 145rem;
       transform: skewY(-8deg); }
   .entry__contents {
     padding-top: 12rem;
     transform: skewY(8deg); }
   .entry__player-entry {
     margin: 0 auto;
-    width: 68rem; }
+    width: 75rem; }
     .entry__player-entry__list {
+      background-color: white;
+      box-shadow: 0.5rem 0.5rem 1rem #464646;
       font-size: 1.6rem;
+      height: 20rem;
       line-height: 2.5rem;
       list-style: inside;
       margin-top: 4rem;
-      margin-left: 3.5rem; }
+      overflow: scroll;
+      overflow-x: hidden;
+      padding: 2rem 4rem;
+      max-width: 75rem; }
       .entry__player-entry__list li:not(:first-child) {
         margin-top: 1.4rem; }
       .entry__player-entry__list li {
@@ -1068,18 +1345,22 @@ main {
       margin-top: 0;
       width: 67.6328502415vw; }
       .entry__player-entry__list {
+        box-shadow: 1.2077294686vw 1.2077294686vw 1rem #464646;
+        box-sizing: border-box;
         font-size: 3.8647342995vw;
+        height: 57.9710144928vw;
         line-height: 7.2463768116vw;
         margin-top: 8.4541062802vw;
-        margin-left: 0;
-        text-align: left; }
+        margin-left: -15%;
+        padding: 1.2077294686vw 2.4154589372vw;
+        text-align: left;
+        width: 130%; }
         .entry__player-entry__list li:not(:first-child) {
           margin-top: 3.3816425121vw; }
+        .entry__player-entry__list li {
+          letter-spacing: 0.2415458937vw; }
         .entry__player-entry__list span {
           font-size: 2.8985507246vw; }
-          .entry__player-entry__list span::before {
-            content: "\a";
-            white-space: pre; }
       .entry__player-entry__button {
         display: block;
         margin: 36.231884058vw auto;
@@ -1127,10 +1408,10 @@ main {
   .sponsor__bg {
     padding: 12rem 2rem 0;
     background-color: #fce34c;
-    height: 80rem; }
+    height: 98rem; }
     .sponsor__bg-shadow {
       background-color: #e7d04b;
-      height: 80rem;
+      height: 98rem;
       transform: skewY(-8deg); }
   .sponsor__contents {
     background-color: #443F21;
@@ -1163,20 +1444,23 @@ main {
     .sponsor__bg {
       padding: 19.3236714976vw 0;
       background-color: #fce34c;
-      height: 111.1111111111vw; }
+      height: 169.0821256039vw; }
       .sponsor__bg-shadow {
         background-color: #e7d04b;
-        height: 111.1111111111vw;
+        height: 169.0821256039vw;
         transform: skewY(-8deg); }
     .sponsor__contents {
-      justify-content: space-evenly;
       margin: 0 auto;
+      padding: 2.4154589372vw;
       width: 90%; }
-      .sponsor__contents img {
-        display: block;
-        height: 15.5797101449vw;
-        margin: 2.4154589372vw 4.8309178744vw;
-        width: 28.9855072464vw; } }
+      .sponsor__contents p {
+        height: 19.3236714976vw;
+        margin: 4.8309178744vw 0;
+        width: 38.6473429952vw; }
+        .sponsor__contents p img {
+          display: block;
+          margin: 2.4154589372vw 4.8309178744vw;
+          width: 28.9855072464vw; } }
 .footer {
   background-image: url("../images/pc_footer_bg.svg");
   background-position: left top;
@@ -1238,7 +1522,7 @@ main {
 @media screen and (max-width: 768px) {
   .footer {
     background-image: url("../images/sp_footer_bg.svg");
-    height: 108.6956521739vw;
+    height: 115.9420289855vw;
     padding: 19.3236714976vw 9.6618357488vw 0; }
     .footer__organizer {
       align-items: center;

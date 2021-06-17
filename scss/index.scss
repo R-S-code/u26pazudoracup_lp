@@ -529,7 +529,7 @@ main {
         font-size: spCalculation(38);
       }
       &__sub-title {
-        font-size: 1.6rem;
+        font-size: spCalculation(16);
         margin-top: spCalculation(10);
       }
     }
@@ -926,6 +926,7 @@ main {
       margin: spCalculation(5) auto 0;
       &__list {
         font-size: spCalculation(16);
+        padding: spCalculation(5) 0;
         div {
           margin-left: spCalculation(10);
           width: spCalculation(270);
@@ -941,15 +942,19 @@ main {
       }
     }
     &__pool-play {
-      height: spCalculation(400);
+      height: spCalculation(450);
+      margin-top: spCalculation(80);
       &__dragon {
         display: none;
       }
       &__outline {
-        margin: 0 auto;
+        margin: 0;
+        padding-left: 0;
         text-align: center;
         &-title {
           margin-top: spCalculation(35);
+          margin-bottom: spCalculation(40);
+          padding: spCalculation(8) spCalculation(12);
           p {
             font-size: spCalculation(20);
           }
@@ -972,15 +977,32 @@ main {
             }
           }
         }
+        &-precaution {
+          font-size: spCalculation(12);
+          line-height: spCalculation(15);
+          margin-top: spCalculation(12);
+          margin-left: 0;
+          overflow-wrap: break-word;
+          text-align: left;
+        }
+        &-title {
+          margin-bottom: spCalculation(40);
+          padding: spCalculation(8) spCalculation(12);
+          p {
+            font-size: spCalculation(20);
+          }
+        }
       }
     }  
     &__final {
       height: spCalculation(450);
+      margin-top: spCalculation(80);
       &__dragon {
         display: none;
       }
       &__outline {
-        margin: 0 auto;
+        margin: 0;
+        padding-right: 0;
         text-align: center;
         &-title {
           margin-top: spCalculation(35);
@@ -1006,6 +1028,19 @@ main {
             }
           }
         }
+        &-precaution {
+          font-size: spCalculation(12);
+          line-height: spCalculation(15);
+          margin-top: spCalculation(12);
+          text-align: left;
+        }
+        &-title {
+          margin-bottom: spCalculation(40);
+          padding: spCalculation(8) spCalculation(12);
+          p {
+            font-size: spCalculation(20);
+          }
+        }
       }
     } 
     &__detail {
@@ -1017,7 +1052,7 @@ main {
       width: spCalculation(270);
       img {
         margin-right: spCalculation(10);
-        width: spCalculation(28);
+        width: spCalculation(32);
       }
     }
   }
@@ -1337,7 +1372,7 @@ main {
             display: block;
             margin: spCalculation(30) auto 0;
             transform: skewY(8deg);
-            width: spCalculation(42);
+            width: spCalculation(50);
             &:hover {
               opacity: 0.8;
             }

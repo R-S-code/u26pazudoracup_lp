@@ -376,7 +376,7 @@ main {
       .contents-area__name-text__title {
         font-size: 9.1787439614vw; }
       .contents-area__name-text__sub-title {
-        font-size: 1.6rem;
+        font-size: 3.8647342995vw;
         margin-top: 2.4154589372vw; }
 
   .contents-title {
@@ -680,7 +680,8 @@ main {
     .event-outline__event-outline {
       margin: 1.2077294686vw auto 0; }
       .event-outline__event-outline__list {
-        font-size: 3.8647342995vw; }
+        font-size: 3.8647342995vw;
+        padding: 1.2077294686vw 0; }
         .event-outline__event-outline__list div {
           margin-left: 2.4154589372vw;
           width: 65.2173913043vw; }
@@ -691,14 +692,18 @@ main {
             margin-left: 4.8309178744vw;
             margin-top: -1.8115942029vw; }
     .event-outline__pool-play {
-      height: 96.6183574879vw; }
+      height: 108.6956521739vw;
+      margin-top: 19.3236714976vw; }
       .event-outline__pool-play__dragon {
         display: none; }
       .event-outline__pool-play__outline {
-        margin: 0 auto;
+        margin: 0;
+        padding-left: 0;
         text-align: center; }
         .event-outline__pool-play__outline-title {
-          margin-top: 8.4541062802vw; }
+          margin-top: 8.4541062802vw;
+          margin-bottom: 9.6618357488vw;
+          padding: 1.9323671498vw 2.8985507246vw; }
           .event-outline__pool-play__outline-title p {
             font-size: 4.8309178744vw; }
         .event-outline__pool-play__outline-list {
@@ -715,12 +720,26 @@ main {
               margin-left: 8.4541062802vw;
               margin-top: -1.8115942029vw;
               width: 47.1014492754vw; }
+        .event-outline__pool-play__outline-precaution {
+          font-size: 2.8985507246vw;
+          line-height: 3.6231884058vw;
+          margin-top: 2.8985507246vw;
+          margin-left: 0;
+          overflow-wrap: break-word;
+          text-align: left; }
+        .event-outline__pool-play__outline-title {
+          margin-bottom: 9.6618357488vw;
+          padding: 1.9323671498vw 2.8985507246vw; }
+          .event-outline__pool-play__outline-title p {
+            font-size: 4.8309178744vw; }
     .event-outline__final {
-      height: 108.6956521739vw; }
+      height: 108.6956521739vw;
+      margin-top: 19.3236714976vw; }
       .event-outline__final__dragon {
         display: none; }
       .event-outline__final__outline {
-        margin: 0 auto;
+        margin: 0;
+        padding-right: 0;
         text-align: center; }
         .event-outline__final__outline-title {
           margin-top: 8.4541062802vw; }
@@ -740,6 +759,16 @@ main {
               margin-left: 8.4541062802vw;
               margin-top: -1.8115942029vw;
               width: 47.1014492754vw; }
+        .event-outline__final__outline-precaution {
+          font-size: 2.8985507246vw;
+          line-height: 3.6231884058vw;
+          margin-top: 2.8985507246vw;
+          text-align: left; }
+        .event-outline__final__outline-title {
+          margin-bottom: 9.6618357488vw;
+          padding: 1.9323671498vw 2.8985507246vw; }
+          .event-outline__final__outline-title p {
+            font-size: 4.8309178744vw; }
     .event-outline__detail {
       font-size: 5.7971014493vw;
       height: 19.3236714976vw;
@@ -749,7 +778,7 @@ main {
       width: 65.2173913043vw; }
       .event-outline__detail img {
         margin-right: 2.4154589372vw;
-        width: 6.7632850242vw; } }
+        width: 7.729468599vw; } }
 .guest {
   margin-top: 3rem;
   padding-top: 12rem; }
@@ -1000,7 +1029,7 @@ main {
           display: block;
           margin: 7.2463768116vw auto 0;
           transform: skewY(8deg);
-          width: 10.1449275362vw; }
+          width: 12.077294686vw; }
           .guest-sp__gaimon-profile__twitter:hover {
             opacity: 0.8; } }
 .competition-reward {

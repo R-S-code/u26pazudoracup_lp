@@ -1210,7 +1210,8 @@ main {
               font-size: spCalculation(16);
               margin-top: spCalculation(10);
               li:first-child {
-                margin-right: spCalculation(15)
+                margin-right: spCalculation(15);
+                white-space: nowrap;
               }
             }
           }
@@ -1267,7 +1268,8 @@ main {
               font-size: spCalculation(16);
               margin-top: spCalculation(10);
               li:first-child {
-                margin-right: spCalculation(15)
+                margin-right: spCalculation(15);
+                white-space: nowrap;
               }
             }
           }
@@ -1294,7 +1296,7 @@ main {
         &-profile {
           background-color: #443f21;
           box-sizing: border-box;
-          height: spCalculation(550);
+          height: spCalculation(620);
           padding-top: spCalculation(160);
           text-align: center;
           transform: skewY(-8deg) translateY(spCalculation(-140));
@@ -1322,9 +1324,12 @@ main {
               color: white;
               display: flex;
               font-size: spCalculation(16);
+              line-height: spCalculation(20);
               margin-top: spCalculation(10);
+              text-align: left;
               li:first-child {
-                margin-right: spCalculation(15)
+                margin-right: spCalculation(15);
+                white-space: nowrap;
               }
             }
           }

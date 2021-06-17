@@ -900,7 +900,8 @@ main {
             font-size: 3.8647342995vw;
             margin-top: 2.4154589372vw; }
             .guest-sp__su-profile__career ul li:first-child {
-              margin-right: 3.6231884058vw; }
+              margin-right: 3.6231884058vw;
+              white-space: nowrap; }
         .guest-sp__su-profile__twitter {
           display: block;
           margin: 7.2463768116vw auto 0;
@@ -945,7 +946,8 @@ main {
             font-size: 3.8647342995vw;
             margin-top: 2.4154589372vw; }
             .guest-sp__kosuke-profile__career ul li:first-child {
-              margin-right: 3.6231884058vw; }
+              margin-right: 3.6231884058vw;
+              white-space: nowrap; }
         .guest-sp__kosuke-profile__twitter {
           display: block;
           margin: 7.2463768116vw auto 0;
@@ -964,7 +966,7 @@ main {
       .guest-sp__gaimon-profile {
         background-color: #443f21;
         box-sizing: border-box;
-        height: 132.8502415459vw;
+        height: 149.7584541063vw;
         padding-top: 38.6473429952vw;
         text-align: center;
         transform: skewY(-8deg) translateY(-33.8164251208vw); }
@@ -988,9 +990,12 @@ main {
             color: white;
             display: flex;
             font-size: 3.8647342995vw;
-            margin-top: 2.4154589372vw; }
+            line-height: 4.8309178744vw;
+            margin-top: 2.4154589372vw;
+            text-align: left; }
             .guest-sp__gaimon-profile__career ul li:first-child {
-              margin-right: 3.6231884058vw; }
+              margin-right: 3.6231884058vw;
+              white-space: nowrap; }
         .guest-sp__gaimon-profile__twitter {
           display: block;
           margin: 7.2463768116vw auto 0;
